@@ -8,6 +8,7 @@
 [node name="Skeleton" parent="." unique_id=1441512005 instance=ExtResource("1_wwpf4")]
 
 [node name="Camera2D" type="Camera2D" parent="Skeleton" unique_id=926185380]
+position = Vector2(0, -110)
 
 [node name="SkeletonHead" parent="." unique_id=536604508 instance=ExtResource("2_m7ahb")]
 position = Vector2(600, -40)
