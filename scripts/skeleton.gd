@@ -4,6 +4,10 @@ extends CharacterBody2D
 @export var can_touch: bool = false
 @export var can_open_doors: bool = false
 
+@export var character: CharacterBody2D
+@export var tileset: TileSet
+@export var tile_map_layer: TileMapLayer
+
 var current_direction: Vector2 = Vector2(1, 0)
 
 
