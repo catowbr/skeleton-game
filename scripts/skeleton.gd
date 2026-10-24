@@ -1,7 +1,5 @@
 extends CharacterBody2D
 
-signal game_won
-
 @export var speed: float = 140.0
 @export var can_touch: bool = false
 @export var can_open_doors: bool = false
@@ -14,3 +12,7 @@ func _process(delta: float) -> void:
 	velocity = direction * speed
 
 	move_and_slide()
+	
+	
+func win_game():
+	current_direction = Vector2(0, 0)
