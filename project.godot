@@ -22,8 +22,8 @@ Connect="*uid://gvvtoxeup880"
 [dotnet]
 
 project/assembly_name="Skeleton Game"
-2d_render/layer_1=""
 ">>>>>>>071ab77(Tilemap-Beta)[physics]3d/physics_engine"="Jolt Physics"
+2d_render/layer_1=""
 
 [layer_names]
 
@@ -35,4 +35,5 @@ config/icon="res://icon.svg"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
