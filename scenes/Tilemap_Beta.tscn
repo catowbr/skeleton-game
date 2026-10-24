@@ -149,13 +149,13 @@ custom_data_layer_0/type = 1
 custom_data_layer_1/name = "WALK_EAST"
 custom_data_layer_1/type = 1
 custom_data_layer_2/name = "WALK_SOUTH"
-custom_data_layer_2/type = 0
+custom_data_layer_2/type = 1
 custom_data_layer_3/name = "WALK_WEST"
-custom_data_layer_3/type = 0
+custom_data_layer_3/type = 1
 custom_data_layer_4/name = "JUMP_UP"
-custom_data_layer_4/type = 0
+custom_data_layer_4/type = 1
 custom_data_layer_5/name = "JUMP_OVER"
-custom_data_layer_5/type = 0
+custom_data_layer_5/type = 1
 sources/1 = SubResource("TileSetAtlasSource_emjop")
 sources/0 = SubResource("TileSetAtlasSource_r08ar")
 
