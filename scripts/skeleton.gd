@@ -3,6 +3,8 @@ extends CharacterBody2D
 @export var speed: float = 140.0
 @export var can_touch: bool = false
 @export var can_open_doors: bool = false
+@export var limb_right: bool = true
+@export var limb_left: bool = false
 
 @export var character: CharacterBody2D
 @export var tileset: TileSet
@@ -11,6 +13,7 @@ extends CharacterBody2D
 @export var animatedSprite: AnimatedSprite2D
 
 var current_direction: Vector2 = Vector2(1, 0)
+var limb: Vector2 = Vector2(0, 0)
 
 
 func _ready() -> void:
@@ -22,7 +25,7 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
-	if is_on_wall() or randi_range(0, 16) == 1:
+	if is_on_wall():
 		var wuff = randi_range(0, 3)
 		if wuff == 0:
 			move_north()
