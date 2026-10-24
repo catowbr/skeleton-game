@@ -19,11 +19,17 @@ config/icon="res://icon.svg"
 
 Connect="*uid://gvvtoxeup880"
 
+[display]
+
+window/size/viewport_width=1080
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+
 [dotnet]
 
 project/assembly_name="Skeleton Game"
-2d_render/layer_1=""
 ">>>>>>>071ab77(Tilemap-Beta)[physics]3d/physics_engine"="Jolt Physics"
+2d_render/layer_1=""
 
 [file_customization]
 
