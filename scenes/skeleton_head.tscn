@@ -16,5 +16,7 @@ shape = SubResource("CircleShape2D_vlktx")
 texture = ExtResource("1_vd0ho")
 
 [node name="Timer" type="Timer" parent="." unique_id=902080660]
+one_shot = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
