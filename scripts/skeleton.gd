@@ -50,3 +50,14 @@ func move_west():
 
 func on_skeleton_stop():
 	current_direction = Vector2(0, 0)
+
+func get_decisions_from_tile() -> Array[Decisions.Room_Decisions]:
+	var room_decisions = Decisions.Room_Decisions
+	var character_position = character.global_position
+	var tile_map_data = tile_map_layer.get_cell_tile_data(character_position)
+	var decisions: Array[Decisions.Room_Decisions]
+	if tile_map_data.get_custom_data("WALK_NORTH"): decisions.append(room_decisions.WALK_NORTH)
+	if tile_map_data.get_custom_data("WALK_EAST"): decisions.append(room_decisions.WALK_EAST)
+	if tile_map_data.get_custom_data("WALK_SOUTH"): decisions.append(room_decisions.WALK_SOUTH)
+	if tile_map_data.get_custom_data("WALK_WEST"): decisions.append(room_decisions.WALK_WEST)
+	return Array[Decisions.Room_Decisions]
