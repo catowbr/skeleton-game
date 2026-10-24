@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://6udsqvk2ukmt"]
+
+[ext_resource type="Texture2D" uid="uid://sgam2ksom3l0" path="res://assets/skeleton_realy_bad.png" id="1_4smbf"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oaxuw"]
+
+[node name="Character" type="CharacterBody2D" unique_id=815793254]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1724412497]
+position = Vector2(1, -0.9999995)
+scale = Vector2(0.359375, 0.50781256)
+texture = ExtResource("1_4smbf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1314715768]
+shape = SubResource("CapsuleShape2D_oaxuw")

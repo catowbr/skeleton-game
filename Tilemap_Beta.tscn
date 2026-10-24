@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://diulbyy5ag6dv"]
+[gd_scene format=4 uid="uid://diulbyy5ag6dv"]
 
 [ext_resource type="Texture2D" uid="uid://0q313pbp8w1i" path="res://assets/Ravens_Beta_Assets/Spritemap.png" id="1_hgab2"]
 
@@ -108,5 +108,6 @@ sources/1 = SubResource("TileSetAtlasSource_emjop")
 
 [node name="Node2D" type="Node2D" unique_id=1775323186]
 
-[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1636855615]
+[node name="Level_Layer" type="TileMapLayer" parent="." unique_id=1636855615]
+tile_map_data = PackedByteArray("AAD//wAAAQAEAAAAAAD/////AQADAAAAAAAAAP7/AQADAAAAAFABAP7/AQADAAAAAFACAP7/AQAEAAAAAGD///7/AQAAAAAAAAD+//7/AQAEAAAAAFD///3/AQABAAAAAAD///z/AQACAAAAAFAAAPz/AQACAAAAADAAAP3/AQACAAAAAGA=")
 tile_set = SubResource("TileSet_oaxuw")
