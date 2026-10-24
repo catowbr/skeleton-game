@@ -60,4 +60,4 @@ func get_decisions_from_tile() -> Array[Decisions.Room_Decisions]:
 	if tile_map_data.get_custom_data("WALK_EAST"): decisions.append(room_decisions.WALK_EAST)
 	if tile_map_data.get_custom_data("WALK_SOUTH"): decisions.append(room_decisions.WALK_SOUTH)
 	if tile_map_data.get_custom_data("WALK_WEST"): decisions.append(room_decisions.WALK_WEST)
-	return Array[Decisions.Room_Decisions]
+	return decisions
