@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://chp8m1vd2uv0y"]
 
 [ext_resource type="PackedScene" uid="uid://pdnrhxskiroo" path="res://scenes/skeleton.tscn" id="1_uwrxv"]
-[ext_resource type="Script" uid="uid://cbc578ifsk14t" path="res://scripts/skeleton_head.gd" id="1_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://cyxkou537tc5e" path="res://scenes/skeleton_head.tscn" id="1_yqjtg"]
 
 [node name="Game" type="Node2D" unique_id=1254290490]
-script = ExtResource("1_yqjtg")
 
 [node name="Skeleton" parent="." unique_id=1441512005 instance=ExtResource("1_uwrxv")]
 
 [node name="Camera2D" type="Camera2D" parent="Skeleton" unique_id=1262829746]
+
+[node name="SkeletonHead" parent="." unique_id=536604508 instance=ExtResource("1_yqjtg")]
+position = Vector2(283, -29)

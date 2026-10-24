@@ -7,7 +7,6 @@ func _on_body_entered(body: Node2D) -> void:
 		return
 	print("level won!")
 	$Timer.start()
-	%Skeleton.win_game()
 
 
 func _on_timer_timeout() -> void:
