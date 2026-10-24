@@ -8,6 +8,8 @@ extends CharacterBody2D
 @export var tileset: TileSet
 @export var tile_map_layer: TileMapLayer
 
+@export var animatedSprite: AnimatedSprite2D
+
 var current_direction: Vector2 = Vector2(1, 0)
 
 
@@ -38,18 +40,23 @@ func _process(delta: float) -> void:
 
 func move_south():
 	current_direction = Vector2(0, -1)
+	animatedSprite.play("walkDown")
 
 func move_north():
 	current_direction = Vector2(0, 1)
+	animatedSprite.play("walkUp")
 
 func move_east():
 	current_direction = Vector2(1, 0)
+	animatedSprite.play("walkRight")
 
 func move_west():
 	current_direction = Vector2(-1, 0)
+	animatedSprite.play("walkLeft")
 
 func on_skeleton_stop():
 	current_direction = Vector2(0, 0)
+	animatedSprite.play("default")
 
 func get_decisions_from_tile() -> Array[Decisions.Room_Decisions]:
 	var room_decisions = Decisions.Room_Decisions
