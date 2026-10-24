@@ -1,6 +1,5 @@
 [gd_scene format=4 uid="uid://j7jl6gg3ok4r"]
 
-[ext_resource type="Script" uid="uid://h02ylrm4sjlq" path="res://scenes/rooms/room.gd" id="1_1x6uo"]
 [ext_resource type="Texture2D" uid="uid://pycp3oorrlg5" path="res://assets/Map/RoomSpriteSheet.png" id="1_kxunx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1x6uo"]
@@ -268,7 +267,6 @@ tile_size = Vector2i(64, 64)
 sources/0 = SubResource("TileSetAtlasSource_1x6uo")
 
 [node name="Coridor" type="Node2D" unique_id=1525651147]
-script = ExtResource("1_1x6uo")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1792921438]
 tile_map_data = PackedByteArray("AAAAAPz/AAADAAAAAAAAAP3/AAADAAAAAAAAAP7/AAADAAAAAAAAAP//AAADAAAAAAABAPz/AAAAAAAAAAABAP3/AAAAAAAAAAABAP7/AAAAAAAAAAABAP//AAAAAAAAAAACAPz/AAACAAAAAAACAP3/AAACAAAAAAACAP7/AAACAAAAAAACAP//AAACAAAAAAADAPz/AAADAAAAAAADAP3/AAADAAAAAAADAP7/AAADAAAAAAADAP//AAADAAAAAAA=")

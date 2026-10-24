@@ -1,6 +1,5 @@
 [gd_scene format=4 uid="uid://byhx5rxk3m2q4"]
 
-[ext_resource type="Script" uid="uid://h02ylrm4sjlq" path="res://scenes/rooms/room.gd" id="1_7n35g"]
 [ext_resource type="Texture2D" uid="uid://pycp3oorrlg5" path="res://assets/Map/RoomSpriteSheet.png" id="1_pajcc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7n35g"]
@@ -268,7 +267,6 @@ tile_size = Vector2i(64, 64)
 sources/0 = SubResource("TileSetAtlasSource_7n35g")
 
 [node name="StraightRoom" type="Node2D" unique_id=2078316527]
-script = ExtResource("1_7n35g")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=570598358]
 tile_map_data = PackedByteArray("AAAAAPz/AAACAAMAAAAAAP3/AAAAAAAAAAAAAP7/AAAAAAAAAAAAAP//AAACAAEAAAABAPz/AAABAAIAAAABAP3/AAABAAIAAAABAP7/AAABAAIAAAABAP//AAABAAIAAAACAPz/AAABAAIAAAACAP3/AAABAAIAAAACAP7/AAABAAIAAAACAP//AAABAAIAAAADAPz/AAAAAAMAAAADAP3/AAACAAAAAAADAP7/AAACAAAAAAADAP//AAAAAAEAAAA=")

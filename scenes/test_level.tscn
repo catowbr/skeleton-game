@@ -4,19 +4,36 @@
 [ext_resource type="PackedScene" uid="uid://cyxkou537tc5e" path="res://scenes/skeleton_head.tscn" id="2_j6w7d"]
 [ext_resource type="PackedScene" uid="uid://41vrex72fn2g" path="res://scenes/rooms/dead_end.tscn" id="3_j6w7d"]
 [ext_resource type="PackedScene" uid="uid://j7jl6gg3ok4r" path="res://scenes/rooms/coridor.tscn" id="4_x4b8f"]
+[ext_resource type="PackedScene" uid="uid://cxmopq4o5f37u" path="res://scenes/rooms/gay_room.tscn" id="5_qcd3b"]
+[ext_resource type="PackedScene" uid="uid://bi1n7qd7wefnf" path="res://scenes/rooms/corner.tscn" id="6_88ety"]
 
 [node name="TestLevel" type="Node2D" unique_id=1893541789]
 
 [node name="Skeleton" parent="." unique_id=1441512005 instance=ExtResource("1_paw1w")]
 z_index = 5
+position = Vector2(128, -87)
 
 [node name="Camera2D" type="Camera2D" parent="Skeleton" unique_id=25750925]
 
 [node name="SkeletonHead" parent="." unique_id=536604508 instance=ExtResource("2_j6w7d")]
-position = Vector2(542, -31)
+z_index = 4
+position = Vector2(379, -374)
 
-[node name="DeadEnd" parent="." unique_id=1891262386 instance=ExtResource("3_j6w7d")]
+[node name="Level" type="Node2D" parent="." unique_id=1469592178]
 
-[node name="Coridor" parent="." unique_id=1525651147 instance=ExtResource("4_x4b8f")]
-position = Vector2(0, -263)
+[node name="Start" parent="Level" unique_id=1891262386 instance=ExtResource("3_j6w7d")]
+
+[node name="Coridor" parent="Level" unique_id=1525651147 instance=ExtResource("4_x4b8f")]
+position = Vector2(0, -256)
 row = -1
+
+[node name="GayRoom" parent="Level" unique_id=539451696 instance=ExtResource("5_qcd3b")]
+position = Vector2(256, -768)
+rotation = -3.1415925
+
+[node name="Corner" parent="Level" unique_id=1485996927 instance=ExtResource("6_88ety")]
+position = Vector2(256, -768)
+rotation = 1.5707964
+
+[node name="End" parent="Level" unique_id=369538015 instance=ExtResource("3_j6w7d")]
+position = Vector2(256, -256)

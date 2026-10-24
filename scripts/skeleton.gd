@@ -20,11 +20,21 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
+	if is_on_wall() or randi_range(0, 16) == 1:
+		var wuff = randi_range(0, 3)
+		if wuff == 0:
+			move_north()
+		if wuff == 1:
+			move_south()
+		if wuff == 2:
+			move_east()
+		if wuff == 3:
+			move_west()
+	
 	var direction = current_direction.normalized()
 	velocity = direction * speed
 
 	move_and_slide()
-
 
 func move_south():
 	current_direction = Vector2(0, -1)
