@@ -17,6 +17,7 @@ var limb: Vector2 = Vector2(0, 0)
 
 
 func _ready() -> void:
+	Connect.skeleton_decisions.connect(on_decision)
 	Connect.skeleton_stop.connect(on_skeleton_stop)
 	Connect.skeleton_move_south.connect(move_south)
 	Connect.skeleton_move_north.connect(move_north)
@@ -40,6 +41,9 @@ func _process(delta: float) -> void:
 	velocity = direction * speed
 
 	move_and_slide()
+
+func on_decision(decisions: Array[String]):
+	pass
 
 func move_south():
 	current_direction = Vector2(0, -1)

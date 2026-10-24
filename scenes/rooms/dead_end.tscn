@@ -1,10 +1,23 @@
 [gd_scene format=4 uid="uid://41vrex72fn2g"]
 
+[ext_resource type="Script" uid="uid://dlj54kecoq02b" path="res://scenes/rooms/room.gd" id="1_euq1g"]
 [ext_resource type="TileSet" uid="uid://4sxdx3ig0oxh" path="res://resource/new_tile_set.tres" id="2_euq1g"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nows7"]
+size = Vector2(256, 255)
+
 [node name="DeadEnd" type="Node2D" unique_id=1891262386]
+script = ExtResource("1_euq1g")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1090777818]
 tile_map_data = PackedByteArray("AAAAAPz/AAACAAMAAAAAAP3/AAAAAAAAAAAAAP7/AAAAAAAAAAAAAP//AAACAAEAAAABAPz/AAABAAIAAAABAP3/AAABAAIAAAABAP7/AAABAAIAAAABAP//AAADAAMAAAACAPz/AAABAAIAAAACAP3/AAABAAIAAAACAP7/AAABAAIAAAACAP//AAADAAMAAAADAPz/AAAAAAMAAAADAP3/AAACAAAAAAADAP7/AAACAAAAAAADAP//AAAAAAEAAAA=")
 tile_set = ExtResource("2_euq1g")
 rendering_quadrant_size = 4
+
+[node name="Area2D" type="Area2D" parent="." unique_id=405937828]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=109186091]
+position = Vector2(128, -127.5)
+shape = SubResource("RectangleShape2D_nows7")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

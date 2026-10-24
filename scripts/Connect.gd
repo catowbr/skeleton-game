@@ -6,3 +6,5 @@ signal skeleton_move_north
 signal skeleton_move_south
 signal skeleton_move_east
 signal skeleton_move_west
+
+signal skeleton_decisions(decisions: Array[String])
