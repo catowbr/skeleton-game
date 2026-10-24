@@ -1,3 +1,9 @@
 [gd_scene format=3 uid="uid://chp8m1vd2uv0y"]
 
+[ext_resource type="PackedScene" uid="uid://pdnrhxskiroo" path="res://scenes/skeleton.tscn" id="1_uwrxv"]
+
 [node name="Game" type="Node2D" unique_id=1254290490]
+
+[node name="Skeleton" parent="." unique_id=1441512005 instance=ExtResource("1_uwrxv")]
+
+[node name="Camera2D" type="Camera2D" parent="Skeleton" unique_id=1262829746]

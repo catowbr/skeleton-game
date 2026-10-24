@@ -1,6 +1,19 @@
 [gd_scene format=3 uid="uid://pdnrhxskiroo"]
 
 [ext_resource type="Script" uid="uid://c3ym68letwqs" path="res://scripts/skeleton.gd" id="1_pbvs3"]
+[ext_resource type="Texture2D" uid="uid://sgam2ksom3l0" path="res://assets/skeleton_realy_bad.png" id="2_txkty"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pbvs3"]
+size = Vector2(12.666667, 19.000002)
 
 [node name="Skeleton" type="CharacterBody2D" unique_id=1441512005]
+position = Vector2(3, -32)
 script = ExtResource("1_pbvs3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1424430067]
+position = Vector2(-2.9999995, 3.4999995)
+scale = Vector2(3, 3)
+shape = SubResource("RectangleShape2D_pbvs3")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1696465887]
+texture = ExtResource("2_txkty")
