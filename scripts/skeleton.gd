@@ -30,7 +30,7 @@ func _process(delta: float) -> void:
 			move_east()
 		if wuff == 3:
 			move_west()
-	
+
 	var direction = current_direction.normalized()
 	velocity = direction * speed
 
