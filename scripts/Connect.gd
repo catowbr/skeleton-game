@@ -1,3 +1,3 @@
-class_name Connect
+extends Node
 
 signal skeleton_stop
