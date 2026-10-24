@@ -22,8 +22,8 @@ Connect="*uid://gvvtoxeup880"
 [dotnet]
 
 project/assembly_name="Skeleton Game"
-">>>>>>>071ab77(Tilemap-Beta)[physics]3d/physics_engine"="Jolt Physics"
 2d_render/layer_1=""
+">>>>>>>071ab77(Tilemap-Beta)[physics]3d/physics_engine"="Jolt Physics"
 
 [file_customization]
 
