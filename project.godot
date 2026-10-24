@@ -25,6 +25,12 @@ project/assembly_name="Skeleton Game"
 ">>>>>>>071ab77(Tilemap-Beta)[physics]3d/physics_engine"="Jolt Physics"
 2d_render/layer_1=""
 
+[file_customization]
+
+folder_colors={
+"res://resource/": "red"
+}
+
 [layer_names]
 
 2d_render/layer_1="Map"
