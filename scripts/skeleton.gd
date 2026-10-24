@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed: float = 15.0
+@export var speed: float = 140.0
 @export var can_touch: bool = false
 @export var can_open_doors: bool = false
 
