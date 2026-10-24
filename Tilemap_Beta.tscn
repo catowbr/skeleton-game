@@ -10,6 +10,7 @@ texture_region_size = Vector2i(64, 64)
 2:0/0 = 0
 3:0/0 = 0
 4:0/0 = 0
+4:0/0/custom_data_0 = true
 5:0/0 = 0
 6:0/0 = 0
 7:0/0 = 0
@@ -104,6 +105,18 @@ texture_region_size = Vector2i(64, 64)
 
 [sub_resource type="TileSet" id="TileSet_oaxuw"]
 tile_size = Vector2i(64, 64)
+custom_data_layer_0/name = "WALK_NORTH"
+custom_data_layer_0/type = 1
+custom_data_layer_1/name = "WALK_EAST"
+custom_data_layer_1/type = 1
+custom_data_layer_2/name = "WALK_SOUTH"
+custom_data_layer_2/type = 0
+custom_data_layer_3/name = "WALK_WEST"
+custom_data_layer_3/type = 0
+custom_data_layer_4/name = "JUMP_UP"
+custom_data_layer_4/type = 0
+custom_data_layer_5/name = "JUMP_OVER"
+custom_data_layer_5/type = 0
 sources/1 = SubResource("TileSetAtlasSource_emjop")
 
 [node name="Node2D" type="Node2D" unique_id=1775323186]
